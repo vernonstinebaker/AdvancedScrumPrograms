@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Ask Question</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-black">
+        <div class="container mx-6 px-4 flex justify-between items-center py-4">
+            <a href="index.html">
+                <img src="images/AdvancedProgramsShield.png" alt="Logo">
+            </a>
+            <div class="text-white">
+                <a href="ProgramChecklist.html" class="font-bold text-lg px-4 hover:text-orange-400">CHECKLIST</a>
+                <a href="FAQ.html" class="font-bold text-lg px-4 hover:text-orange-400">FAQ</a>
+            </div>
+        </div>
+    </nav>
+  
+    <section class="bg-cover bg-center font-sans" style="background-image: url(images/team-1928848-2000x1333.jpg)">              
+        <div class="bg-black bg-opacity-50 flex flex-col text-3xl font-bold text-center text-white py-6">Coaching Path to CSP and beyond FAQ</div>
+        <div class="bg-black bg-opacity-50 px-20 py-6" x-data="{ openItem: 1 }">
+            <ul>
+                <!-- Item 1 -->
+                <li class="mb-4">
+                    <h4 @click="openItem = openItem === 1 ? null : 1"
+                        class="cursor-pointer px-4 py-2 text-white font-semibold rounded-t-lg hover:bg-gray-600"
+                        x-bind:class="{ 'rounded-b-none': openItem === 1 }">
+                        + Why this program?
+                    </h4>
+                    <div x-show="openItem === 1" class="border p-4 rounded-b-lg text-white"
+                        x-bind:class="{ 'rounded-t-none': openItem === 1 }">
+                        A coaching-based approach is a strong alternative to attending classroom based training. Unlike
+                        classroom-based training, a coaching program can be tailored to individual preferences and
+                        learning styles. It allows knowlege to be acquired over time, allowing deeper learning through
+                        practice and reflection. It also allows the learner to work with topics as they become relevant
+                        to their needs, further increasing learning effectiveness.
+                    </div>
+                </li>
+                <!-- Item 2 -->
+                <li class="mb-4">
+                    <h4 @click="openItem = openItem === 2 ? null : 2"
+                        class="cursor-pointer px-4 py-2 text-white font-semibold rounded-t-lg hover:bg-gray-600"
+                        x-bind:class="{ 'rounded-b-none': openItem === 2 }">
+                        + Is it right for me?
+                    </h4>
+                    <div x-show="openItem === 2" class="border p-4 rounded-b-lg text-white"
+                        x-bind:class="{ 'rounded-t-none': openItem === 2 }">
+                        That depends. <br><br>If your interest is developing deep knowledge and practical experience
+                        over time, and you have the ability to set goals and stick with an extended learning program, a
+                        coaching based approach may be the perfect option. <br><br>If you're interested in quick
+                        certification, a classroom-based training program may better satisfiy your needs.
+                    </div>
+                </li>
+                <!-- Item 3 -->
+                <li class="mb-4">
+                    <h4 @click="openItem = openItem === 3 ? null : 3"
+                        class="cursor-pointer px-4 py-2 text-white font-semibold rounded-t-lg hover:bg-gray-600"
+                        x-bind:class="{ 'rounded-b-none': openItem === 3 }">
+                        + How much does it cost?
+                    </h4>
+                    <div x-show="openItem === 3" class="border p-4 rounded-b-lg text-white"
+                        x-bind:class="{ 'rounded-t-none': openItem === 3 }">
+                        Program fees are established in by the accrediting coach. Use the contact form or look for a
+                        program listing for your geography on the Agile Coaches Alliance website for additional
+                        information.
+                    </div>
+                </li>
+                <!-- Item 4 -->
+                <li class="mb-4">
+                    <h4 @click="openItem = openItem === 4 ? null : 4"
+                        class="cursor-pointer px-4 py-2 text-white font-semibold rounded-t-lg hover:bg-gray-600"
+                        x-bind:class="{ 'rounded-b-none': openItem === 4 }">
+                        + How long will it take to compete the program?
+                    </h4>
+                    <div x-show="openItem === 4" class="border p-4 rounded-b-lg text-white"
+                        x-bind:class="{ 'rounded-t-none': openItem === 4 }">
+                        The time required to complete the programs vary depending on the individual. If you already have
+                        extensive experiece as a ScrumMaster and can readily demonstrate the required levels of
+                        competency you can progress through the program quickly. If you have just completed your
+                        Certified ScrumMaster (CSM) training and have limited prior experience then it will take longer.
+                        How quickly you progress is largely up to you. Keep in mind that this program is optimized for
+                        depth and capability, not speed. <strong>Each program must be completed within one
+                            year.<br></strong>
+                    </div>
+                </li>
+                <!-- Item 5 -->
+                <li class="mb-4">
+                    <h4 @click="openItem = openItem === 5 ? null : 5"
+                        class="cursor-pointer px-4 py-2 text-white font-semibold rounded-t-lg hover:bg-gray-600"
+                        x-bind:class="{ 'rounded-b-none': openItem === 5 }">
+                        + Who is offering this program?
+                    </h4>
+                    <div x-show="openItem === 5" class="border p-4 rounded-b-lg text-white"
+                        x-bind:class="{ 'rounded-t-none': openItem === 5 }">
+                        This program is developed and run by Vernon Stinebaker. Vernon is a Scrum Alliance Certified
+                        Scrum Trainer (CST) a Scrum Alliance Path to CSP Educator, and an International Coach Federation
+                        Professional Certified Coach (PCC).
+
+                        Vernon is an active Scrum Alliance volunteer, currently serving on the Certified Teams Coach
+                        (CTC) review committee and the CEC/CTC improvment committee. He is an alumni of many Scrum
+                        Alliance committees including one of the longest serving members of the Trainer Approval
+                        Committee (TAC). </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-black py-4">
+        <div class="container mx-auto text-white flex flex-col items-center justify-center text-center">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" class="border-0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png">
+            </a>
+            <p class="mt-2">
+                Website text is licensed under a 
+                <a rel="license" class="text-orange-400 underline" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    Creative Commons Attribution-ShareAlike 4.0 International License
+                </a>.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
